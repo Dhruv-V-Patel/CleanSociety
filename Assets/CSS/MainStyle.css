@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-inner img{
+  height: 450px;
+}
+
+/*---------------------------
+         Scroll up Css
+  ---------------------------*/
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+
+/*---------------------------
+        Map CSS
+  ---------------------------*/
+
+    iframe {
+        width: 80%;
+        height: 500px;
+    }
+    .map{
+      background-color: #1A2238;
+    }
+    .map .inner{
+      font-family: Arial, Helvetica, sans-serif; 
+      font-size: 30px; 
+      margin-top: 10px; 
+      padding-top: 10px; 
+      text-align: center; 
+      color: rgb(10, 168, 158);
+    }
+    .inner .header{
+      margin-top: 10px;
+    }
+    
+/*---------------------------
+        Feature CSS
+  ---------------------------*/
+
+    .feature .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .feature .box-container .box {
+        width: 500px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: .2s linear;
+        cursor: pointer;
+    }
+
+    .feature .box-container .box h3 {
+        color: #444;
+        font-size: 20px;
+        padding: 10px 0;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .feature .box-container .box p {
+        color: #777;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .feature .box-container .box:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+        transform: scale(1.03);
+    }
+
+    .feature .box-container .box a i {
+        color: green;
+        font-size: 50px;
+    }
+
+    .feature .box-container .box:hover i {
+        font-size: 70px;
+    }
+
+/*---------------------------
+        Banner CSS
+  ---------------------------*/
+
+    .banner {
+        position: relative;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 500px;
+        opacity: 0.5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    .banner .text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner .text h2 {
+        font-size: 40px;
+        color: black;
+    }
+
+    .banner .text span {
+        color: #008000;
+    }
+
+/*---------------------------
+        Responsive CSS
+  ---------------------------*/
+
+
+@media (max-width:768px){
+    .carousel-inner img{
+      height: 200px;
+    }
+}
